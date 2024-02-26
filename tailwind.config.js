@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "index.html"
+    "register.html"
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#044087',
-        secondary:'#64748b',
-        dark: '#0f172a',
+         primary:'#076AE1',
+        secondary:'#86888B',
       }
     },
   },
