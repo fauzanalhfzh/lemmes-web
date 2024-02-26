@@ -6,6 +6,20 @@
     <title>Lemmes</title>
     <link href="./src/output.css" rel="stylesheet">
 </head>
+
+<!-- localstorage darkmode -->
+<!-- <script>
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script> -->
+
 <body>
   <!-- header start -->
   <div class="min-h-full">
@@ -40,7 +54,7 @@
                   <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
-                    <img class="h-7 w-7 rounded-full" src="./assets/img/bell2-r.png" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgb(241, 239, 239);transform:msFilter;"><path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 0 0 3 16v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 0 0 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22z"></path></svg>
                   </button>
               </div>
               <div class="absolute w-3 h-3 bg-yellow-400 rounded-full text-center md:right-40 md:mx-7 md:top-3 right-4 top-3">
@@ -51,6 +65,10 @@
           </div>
           <!-- End Profile -->
         </div>
+        
+        <!-- Darkmode -->
+        
+        <!-- End DarkMode -->
       </div>
     </div>
   </div>
@@ -63,11 +81,11 @@
         <!-- Main left Start -->
         <img class="md:h-56 md:w-56 rounded-full" src="./assets/img/org-3.png" alt="">
         <div class="flex justify-center items-center">
-        <div class="md:block md:mx-6 pt-4 md:text-left text-center">
-          <p class="text-white font-bold text-2xl w-80">Adimas Rizki Purwanto</p>
+        <div class="md:block md:mx-6 md:-mt-8 md:text-left text-center">
+          <p class="text-white font-bold text-2xl w-80">Alexandra Gracia Putra</p>
           <p class="text-white text-lg">202112019</p>
-          <p class="text-white text-lg">adimasrizki926@gmail.com</p>
-          <p class="text-white text-lg">087887967328</p>
+          <p class="text-white text-lg">alexchandra926@gmail.com</p>
+          <p class="text-white text-lg">087887697896</p>
       <div class="mt-4 ">
         <a href="#" class="py-2 px-10 font-semibold bg-blue-700 border border-x-2 border-y-2 border-white rounded-full text-white hover:bg-green-400 transition-all duration-500">
           <span>Aktif</span>
@@ -89,11 +107,11 @@
         <p class="md:text-6xl text-4xl -mx-4 font-bold text-white md:-mx-10">144</p>
       </div>
       <div class="space-y-3 md:w-24 w-72 text-white">
-        <p class="text-lg -mx-6">Mata Kuliah</p>
-        <p class="md:text-6xl text-4xl font-bold text-white md:-mx-3">20</p>
+        <p class="text-lg -mx-10">Mata Kuliah</p>
+        <p class="md:text-6xl text-4xl font-bold text-white -ms-8">20</p>
       </div>
     </div>
-    <div class="absolute top-64 mt-3 right-[30rem] -mx-6 text-slate-100">
+    <div class="absolute md:top-64 md:mt-3 mt-5 mx-10 md:right-[30rem] md:-mx-6 text-slate-100">
       <p>Dosen wali <span class="text-white font-semibold">Solihin</span></p>
     </div>
   </div>    
@@ -102,42 +120,61 @@
   <!-- End Main -->
 
   <!-- Content Card -->
-  <div class="w-full h-[18rem]">
+  <div class="w-full h-[18rem] bg-blue-50">
     <div class="hidden md:flex md:items-center">
-      <div class="absolute w-72 h-60 bg-slate-50 shadow-2xl rounded-xl left-52 mt-36">
-        <div class="flex mt-3 mx-6">
+      <div class="absolute w-72 h-60 bg-blue-50 shadow-2xl rounded-xl left-52 mt-36">
+        <div class="flex mt-5 mx-6">
           <h1 class="text-2xl font-bold font-sans">Menu</h1>
           <img class="w-5 h-5 mt-2 mx-36" src="./assets/img/Vector.png" alt="">
         </div>
       </div>
     </div>
     <div class="flex items-center justify-center">
-      <div class="md:absolute md:w-[44rem] md:h-[17rem] w-[22rem] h-[18rem] bg-white md:bg-slate-50 md:shadow-2xl md:rounded-xl md:right-44 md:mt-44">
-        <div class="flex md:mt-3 md:mx-6 mx-14 mt-4">
+      <div class="md:absolute md:w-[44rem] md:h-[17rem] w-[22rem] h-[18rem] bg-white md:bg-blue-50 md:shadow-2xl md:rounded-xl md:right-44 md:mt-44">
+        <div class="flex md:mt-5 md:mx-6 mx-14 mt-4">
           <h1 class="md:text-2xl text-[30px] font-bold font-sans">Jadwal Kuliah</h1>
         </div>
 
-        <div class="flex border border-black">
-          <table>
-            <tr>
-              <th style="text-align: right;">Mata Kuliah</th>
-              <th>Kelas</th>
-              <th>Jadwal</th>
-            </tr>
-            <tr>
-              <td>Desain Web</td>
-              <td>L-101</td>
-              <td>Senin, 08.00 - 11.45</td>
-            </tr>
-          </table>
-        </div>
+        
+
+      <div class="relative overflow-x-auto mt-3">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-md text-gray-700 md:bg-slate-200 md:text-black font-bold">
+                <tr class="border-b border-slate-400">
+                    <th scope="col" class="px-6 py-3">Mata Kuliah</th>
+                    <th scope="col" class="px-6 py-3">Kelas</th>
+                    <th scope="col" class="px-6 py-3">Jadwal</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="bg-white md:bg-slate-200 dark:border-gray-700">
+                  <td scope="row" class="px-6 py-4 font-medium text-black">Apple MacBook Pro 17"</td>
+                  <td class="px-6 py-4 text-black">Silver</td>
+                  <td class="px-6 py-4 text-black">Laptop</td>
+                </tr>
+
+                <tr class="bg-white md:bg-slate-200 dark:border-gray-700">
+                  <td scope="row" class="px-6 py-4 font-medium text-black">Apple MacBook Pro 17"</td>
+                  <td class="px-6 py-4 text-black">Silver</td>
+                  <td class="px-6 py-4 text-black">Laptop</td>
+                </tr>
+                <tr class="bg-white md:bg-slate-200 dark:border-gray-700">
+                  <td scope="row" class="px-6 py-4 font-medium text-black">Apple MacBook Pro 17"</td>
+                  <td class="px-6 py-4 text-black">Silver</td>
+                  <td class="px-6 py-4 text-black">Laptop</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+
         
       </div>
     </div>
   </div>
   <!-- End Content Card -->
 
-  <footer class="w-full md:h-16 md:mt-6">
+  <footer class="w-full md:h-16 bg-blue-50">
     <div class="block md:flex md:justify-center md:gap-[38rem]">
       <p class="text-slate-500 md:ms-10 mx-16 text-sm w-48 md:w-48">Copyright &copy; Lemmes - 2024</p>
       <div class="flex md:gap-14">
@@ -146,5 +183,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
