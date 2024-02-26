@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lemmes</title>
     <link href="./src/output.css" rel="stylesheet" />
-    
     <!-- fonts google poppins start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,29 +16,33 @@
     
   </head>
   <body>
-    <div class="flex w-full items-center justify-center h-screen">
-      <div class="relative flex flex-col md:flex-row md:space-y-">
+    <div class="flex items-center justify-center h-screen">
+      <div class="relative flex flex-col">
         <!-- left side -->
-        <div class="flex flex-col justify-center ml-[80px] mr-[-70px]">
-          <img src="assets/img/logo.png" class="w-[150px] mb-5 ml-10" />
+        <div class="flex flex-col justify-center ml-[90px] mr-[-40px]">
+          <img src="assets/img/logo.png" class="w-[150px] mb-5 ml-5" />
           <h1 class="text-4xl font-bold text-md text-primary">
-            Sign In<span class="text-base font-light text-secondary mb-10"> /Sign Up </span>
+            Sign Up<span class="text-base font-light text-secondary mb-10"> /Sign In </span>
           </h1>
-
           <div class="py-2 font-semibold">
-            
-            <span class="text-md text-secondary">NIM</span>
+            <span class="text-md text-secondary">NIM</span><br>
             <input
               type="text"
               class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="0000-00-000"
               name="nim"
               id="nim"
             />
-            <div class="ml-[275px] mt-[-29px]">
-              <img src="assets/img/user.png">
-            </div>
           </div>
-          <div class="py-4 font-semibold">
+          <div class="py-2 font-semibold">
+            <span class="text-md text-secondary">Full Name</span>
+            <input
+              type="text"
+              class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="Aji Ihsan Bayumi"
+              name="fullname"
+              id="fullname"
+            />
+          </div>
+          <div class="py-2 font-semibold">
             <span class="mb-2 text-md text-secondary">Password</span>
             <input
               type="password"
@@ -47,22 +50,26 @@
               id="pass"
               class="w-[300px] p-2 border-b-3 shadow-xl border-gray-300 rounded-md placeholder:text-secondary" placeholder="0000-00-000"
             />
-            <div class="ml-[275px] mt-[-29px]">
-              <img src="assets/img/password.png">
-            </div>
+          </div>
+          <div class="py-2">
+            <span class="text-md text-secondary font-semibold">Kartu Tanda Mahasiswa</span>
+            <input type="file" name="ktm" id="ktm" class="file:border-primary file:bg-transparent file:text-primary file:rounded-xl text-secondary file:w-[180px] file:mt-5 file:hover:bg-primary file:hover:text-white"/>
           </div>
 
           <button
-            class="w-[170px] bg-primary rounded-lg text-white p-2 font-semibold mt-5"
+            class="w-[250px] bg-primary rounded-lg text-white p-2 font-semibold mt-5"
           >
-            Sign in
+            Sign Up
           </button>
-           <footer class=" flex flex-wrap text-secondary text-sm mt-20">
-            <p>Privacy</p>
-            <p class="ml-14">Terms & Condition</p>
+          <footer class="text-secondary text-sm mt-5 hidden md:block">
+            <p>*Make sure your data is valid, if not may potencialy to block
+                 by administrator.</p>
+            <div class="flex flex-wrap mt-9">
+              <p>Privacy</p>
+              <p class="ml-14">Terms & Condition</p>
+            </div>
           </footer>
           </div>
-         
         </div>
         <!-- {/* right side */} -->
         <div class="relative w-full h-screen ml-[90px]">
