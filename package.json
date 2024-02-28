@@ -6,6 +6,8 @@
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
-    "boxicons": "^2.1.4"
+    "boxicons": "^2.1.4",
+    "flowbite": "^2.3.0",
+    "preline": "^2.0.3"
   }
 }

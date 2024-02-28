@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemmes</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- fonts google poppins start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts google poppins end -->
+
+    <!-- Local storage darkmode -->
+    <script>
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      </script>
+      <!-- End local darkmode -->
+    
+  </head>
+  <body>
+    <div class="absolute top-0 left-[26rem]">
+        <!-- Darkmode -->
+        <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 ml-2">
+          <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
+        <!-- End DarkMode -->
+    </div>
+
+    <div class="flex items-center justify-center h-[48rem] bg-white dark:bg-dark">
+      <div class="relative flex flex-col">
+        <!-- left side -->
+        <div class="flex flex-col justify-center ml-[90px] mr-[-40px]">
+          <img src="./assets/img/logo-lemmes.png" class="w-[150px] mb-5 mt-4 ml-14" />
+          <h1 class="text-4xl font-bold text-md text-primary">
+            Sign Up<span class="text-base font-light text-secondary mb-10"> /Sign In </span>
+          </h1>
+          <div class="py-2 font-semibold">
+            <span class="text-md text-secondary">NIM</span><br>
+            <input
+              type="text"
+              class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="0000-00-000"
+              name="nim"
+              id="nim"
+            />
+          </div>
+          <div class="py-2 font-semibold">
+            <span class="text-md text-secondary">Full Name</span>
+            <input
+              type="text"
+              class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="Aji Ihsan Bayumi"
+              name="fullname"
+              id="fullname"
+            />
+          </div>
+          <div class="py-2 font-semibold">
+            <span class="mb-2 text-md text-secondary">Password</span>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              class="w-[300px] p-2 border-b-3 shadow-xl border-gray-300 rounded-md placeholder:text-secondary" placeholder="0000-00-000"
+            />
+          </div>
+
+          <div class="py-2">
+            <input type="file" name="ktm" id="ktm" class="file:border-blue-400 file:bg-transparent file:text-primary file:rounded-xl text-secondary file:w-[178px] file:mt-5 file:hover:bg-blue-400 file:hover:text-white"/>
+          </div>
+
+          <button class="w-[250px] bg-primary rounded-lg text-white p-2 font-semibold mt-5">Sign Up</button>
+          
+          <footer class="text-secondary text-sm mt-5 hidden md:block">
+            <p>*Make sure your data is valid, if not may potencialy to block
+                 by administrator.</p>
+            <div class="flex flex-wrap mt-9">
+              <p>Privacy</p>
+              <p class="ml-14">Terms & Condition</p>
+            </div>
+          </footer>
+          </div>
+        </div>
+
+        <!-- {/* right side */} -->
+        <div class="relative w-full h-[48rem] ml-[80px]">
+          <img class="hidden md:block w-full h-[48rem]"
+            src="assets/img/images.png"
+            
+          />
+          <!-- text on image  -->
+          <div class="absolute hidden bottom-0 left-0 top-0 w-full h-full bg-primary bg-opacity-60 rounded drop-shadow-lg md:block">
+            <h1 class="italic text-[80px] font-bold mx-20 mt-[150px] text-white -mb-7">Lemmes</h1>
+                <span class="text-[29px] mx-20 -mx-30 text-white">Learning Management System</span>
+            <hr class="mx-20 -mx-30 mt-10 w-20 border-b-8 mb-[55px]">
+            <p class="flex text-left mx-20 -mx-30 text-white">"Challenge yourself to be better than you were <br> yesterday. The road of education may have twists and <br> turns, but each obstacle is an opportunity to prove your <br> resilience and determination."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
