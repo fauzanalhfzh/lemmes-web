@@ -1560,8 +1560,12 @@ input:checked + .toggle-bg {
   margin-inline-start: 0.75rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-\[2\.5rem\] {
+  margin-left: 2.5rem;
 }
 
 .mt-2 {
@@ -3651,7 +3655,7 @@ input:checked + .toggle-bg {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
+.text-secondary {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
