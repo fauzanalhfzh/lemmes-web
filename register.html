@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemmes</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- fonts google poppins start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts google poppins end -->
+    
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen">
+      <div class="relative flex flex-col">
+        <!-- left side -->
+        <div class="flex flex-col justify-center ml-[90px] mr-[-40px]">
+          <img src="assets/img/logo.png" class="w-[150px] mb-5 ml-5" />
+          <h1 class="text-4xl font-bold text-md text-primary">
+            Sign Up<span class="text-base font-light text-secondary mb-10"> /Sign In </span>
+          </h1>
+          <div class="py-2 font-semibold">
+            <span class="text-md text-secondary">NIM</span><br>
+            <input
+              type="text"
+              class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="0000-00-000"
+              name="nim"
+              id="nim"
+            />
+          </div>
+          <div class="py-2 font-semibold">
+            <span class="text-md text-secondary">Full Name</span>
+            <input
+              type="text"
+              class="w-[300px] p-2 border-b-3 shadow-xl rounded-md placeholder:text-secondary" placeholder="Aji Ihsan Bayumi"
+              name="fullname"
+              id="fullname"
+            />
+          </div>
+          <div class="py-2 font-semibold">
+            <span class="mb-2 text-md text-secondary">Password</span>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              class="w-[300px] p-2 border-b-3 shadow-xl border-gray-300 rounded-md placeholder:text-secondary" placeholder="0000-00-000"
+            />
+          </div>
+          <div class="py-2">
+            <span class="text-md text-secondary font-semibold">Kartu Tanda Mahasiswa</span>
+            <input type="file" name="ktm" id="ktm" class="file:border-primary file:bg-transparent file:text-primary file:rounded-xl text-secondary file:w-[180px] file:mt-5 file:hover:bg-primary file:hover:text-white"/>
+          </div>
+
+          <button
+            class="w-[250px] bg-primary rounded-lg text-white p-2 font-semibold mt-5"
+          >
+            Sign Up
+          </button>
+          <footer class="text-secondary text-sm mt-5 hidden md:block">
+            <p>*Make sure your data is valid, if not may potencialy to block
+                 by administrator.</p>
+            <div class="flex flex-wrap mt-9">
+              <p>Privacy</p>
+              <p class="ml-14">Terms & Condition</p>
+            </div>
+          </footer>
+          </div>
+        </div>
+        <!-- {/* right side */} -->
+        <div class="relative w-full h-screen ml-[90px]">
+          <img class="hidden md:block w-full h-screen"
+            src="assets/img/images.png"
+            
+          />
+          <!-- text on image  -->
+          <div
+            class="absolute hidden bottom-0 left-0 w-full h-full bg-primary bg-opacity-60 rounded drop-shadow-lg md:block"
+          >
+          <h1 class="italic text-[80px] font-bold mx-20 mt-[150px] text-white -mb-7">Lemmes</h1>
+            <span class="text-[29px] mx-20 -mx-30 text-white"
+              >Learning Management System
+            </span>
+            <hr class="mx-20 -mx-30 mt-10 w-20 border-b-8 mb-[55px]">
+            <p class="flex text-left mx-20 -mx-30 text-white">"Challenge yourself to be better than you were <br> yesterday. The road of education may have twists and <br> turns, but each obstacle is an opportunity to prove your <br> resilience and determination."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
