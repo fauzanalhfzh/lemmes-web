@@ -57,12 +57,12 @@
 
           <div class="py-4 font-semibold">
             <label class="mb-2 text-md text-secondary">Password</label>
-            <input type="password" name="pass" id="pass" class="w-[300px] bg-blue-50 p-2 border-b-3 shadow-xl border-gray-300 rounded-md placeholder:text-secondary" placeholder="0000-00-000"/>
+            <input type="password" name="password" id="password" class="w-[300px] bg-blue-50 p-2 border-b-3 shadow-xl border-gray-300 rounded-md placeholder:text-secondary" placeholder="0000-00-000"/>
               <div class="ml-[275px] mt-[-29px]">
                 <img src="assets/img/password.png">
               </div>
           </div>
-          <button class="w-[170px] bg-primary rounded-lg text-white p-2 font-semibold mt-5">Sign in</button>
+          <button class="w-[170px] bg-primary rounded-lg text-white p-2 font-semibold mt-5" onclick="Login()">Sign in</button>
            
           <footer class=" flex flex-wrap text-secondary text-sm mt-20">
             <p>Privacy</p>
@@ -87,6 +87,21 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function Login() {
+            var nim = document.getElementById("nim").value;
+            var pass = document.getElementById("password").value;
+
+            if (nim=="lemmes" && pass=="123") {
+                alert("Selamat Datang di lemmes");
+                document.location.href='profile.html';
+            } else {
+                alert("Nim atau password Anda salah");
+                document.location.href='login.html';
+            }
+        }
+    </script>
 
     <script src="./assets/js/script.js"></script>
   </body>
